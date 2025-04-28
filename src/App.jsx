@@ -3,7 +3,7 @@ import React from 'react';
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Header from "./components/layout/Header";
 import Home from "./pages/Home";
 import Footer from "./components/layout/Footer";

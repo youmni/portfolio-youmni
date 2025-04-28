@@ -259,7 +259,7 @@ export const studies = [
     name: "Erasmushogeschool Brussel",
     description: "Applied Computer Science",
     year: "2023-2026",
-    education: "bachelor's degree",
+    education: "Bachelor's degree",
     url: "https://www.erasmushogeschool.be/nl/opleidingen/toegepaste-informatica",
   },
   {
