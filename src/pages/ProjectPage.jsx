@@ -1,12 +1,13 @@
-import React, {useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { projects } from "../../data";
 import { Button } from "../components/Button";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
-import { FiArrowLeft } from "react-icons/fi";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 const ProjectPage = () => {
   const { id } = useParams();
@@ -15,7 +16,7 @@ const ProjectPage = () => {
   useEffect(() => {
     const foundProject = projects.find((p) => p.id === parseInt(id));
     setProject(foundProject);
-  }, [id]); 
+  }, [id]);
 
   if (!project) {
     return (
@@ -38,28 +39,43 @@ const ProjectPage = () => {
         to="/"
         className="inline-block text-sky-800 border-2 border-sky-800 hover:bg-black hover:text-white hover:border-black rounded-full px-3 py-2 cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-opacity-75"
       >
-        <FiArrowLeft className="mr-2" />{" "}
+        <FaArrowLeft className="mr-2" />
       </Link>
       <h1 className="text-4xl font-bold text-sky-800">{project.title}</h1>
       <p className="text-gray-700 text-lg">{project.description}</p>
-      <Swiper
-        navigation={true}
-        modules={[Navigation, Pagination]}
-        spaceBetween={20}
-        slidesPerView={1}
-        pagination={{ clickable: true }}
-        className="w-full md:h-[500px] rounded-lg overflow-hidden shadow-lg"
-      >
-        {project.images.map((image, index) => (
-          <SwiperSlide key={index}>
-            <img
-              src={image}
-              alt={`Slide ${index}`}
-              className="w-full h-full object-contain bg-gray-100"
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+
+      <div id="swiper-container" className="relative">
+        <Swiper
+          modules={[Navigation, Pagination]}
+          spaceBetween={20}
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+          navigation={{
+            nextEl: ".custom-swiper-button-next",
+            prevEl: ".custom-swiper-button-prev",
+          }}
+          className="w-full md:h-[500px] rounded-lg overflow-hidden shadow-lg"
+        >
+          {project.images.map((image, index) => (
+            <SwiperSlide key={index}>
+              <img
+                src={image}
+                alt={`Slide ${index}`}
+                className="w-full h-full object-contain bg-gray-100"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        {/* Custom navigation buttons */}
+        <div className="custom-swiper-button-prev absolute top-1/2 left-2 -translate-y-1/2 z-20 cursor-pointer text-gray-800 bg-white rounded-full border-2 border-black pointer-events-auto">
+          <FaArrowLeft size={30} />
+        </div>
+        <div className="custom-swiper-button-next absolute top-1/2 right-2 -translate-y-1/2 z-20 cursor-pointer text-gray-800 bg-white rounded-full border-2 border-black pointer-events-auto">
+          <FaArrowRight size={30} />
+        </div>
+      </div>
+
       <div className="space-y-4">
         <h2 className="text-xl font-semibold">Technologies</h2>
         <div className="flex flex-wrap gap-2">
@@ -73,6 +89,7 @@ const ProjectPage = () => {
           ))}
         </div>
       </div>
+
       <div className="space-y-4">
         <h2 className="text-xl font-semibold">Authors</h2>
         <ul className="flex flex-wrap gap-4 text-gray-700">
@@ -90,6 +107,7 @@ const ProjectPage = () => {
           ))}
         </ul>
       </div>
+
       <div className="mt-6">
         <Button>
           <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
