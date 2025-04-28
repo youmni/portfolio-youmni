@@ -1,7 +1,7 @@
 import React, {useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { projects } from "../../data";
-import { Button } from "../components/button";
+import { Button } from "../components/Button";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
