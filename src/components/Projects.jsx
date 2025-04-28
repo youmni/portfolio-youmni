@@ -9,22 +9,27 @@ import { projects } from "../../data";
 
 const ProjectSwiper = () => {
   return (
-    <div id="projects" className="max-w-6xl mx-auto px-4">
-      <h1 className="text-3xl text-start text-sky-800 text-gray-800 mb-6">My projects</h1>
+    <div id="projects" className="max-w-6xl mx-auto px-4 relative">
+      <h1 className="text-3xl text-start text-gray-800 mb-6">
+        My projects
+      </h1>
+
+      {/* SWIPER */}
       <Swiper
         modules={[Pagination, Navigation]}
         spaceBetween={20}
         slidesPerView={1}
+        speed={400}
+        threshold={10}
         pagination={{ clickable: true }}
         navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev", 
+          nextEl: ".custom-swiper-button-next",
+          prevEl: ".custom-swiper-button-prev",
         }}
         breakpoints={{
           640: { slidesPerView: 1.1 },
         }}
         className="my-6"
-        noSwipingClass="swiper-no-swiping"
       >
         {projects.map((project) => (
           <SwiperSlide key={project.id}>
@@ -37,12 +42,14 @@ const ProjectSwiper = () => {
             />
           </SwiperSlide>
         ))}
-
-        <div className="swiper-button-next absolute top-1/2 right-4 z-10">
-        </div>
-        <div className="swiper-button-prev absolute top-1/2 left-4 z-10">
-        </div>
       </Swiper>
+
+      <div className="custom-swiper-button-prev absolute top-1/2 left-2 -translate-y-1/2 z-20 cursor-pointer text-gray-800 pointer-events-auto">
+        <FaArrowLeft size={30} />
+      </div>
+      <div className="custom-swiper-button-next absolute top-1/2 right-2 -translate-y-1/2 z-20 cursor-pointer text-gray-800 pointer-events-auto">
+        <FaArrowRight size={30} />
+      </div>
     </div>
   );
 };
