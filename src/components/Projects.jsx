@@ -14,7 +14,6 @@ const ProjectSwiper = () => {
         My projects
       </h1>
 
-      {/* SWIPER */}
       <Swiper
         modules={[Pagination, Navigation]}
         spaceBetween={20}
@@ -44,10 +43,10 @@ const ProjectSwiper = () => {
         ))}
       </Swiper>
 
-      <div className="custom-swiper-button-prev absolute top-1/2 left-2 -translate-y-1/2 z-20 cursor-pointer text-gray-800 pointer-events-auto">
+      <div className="custom-swiper-button-prev absolute top-1/2 left-2 -translate-y-1/2 z-20 cursor-pointer text-gray-800 bg-white rounded-full border-2 border-black pointer-events-auto">
         <FaArrowLeft size={30} />
       </div>
-      <div className="custom-swiper-button-next absolute top-1/2 right-2 -translate-y-1/2 z-20 cursor-pointer text-gray-800 pointer-events-auto">
+      <div className="custom-swiper-button-next absolute top-1/2 right-2 -translate-y-1/2 z-20 cursor-pointer text-gray-800 bg-white rounded-full border-2 border-black pointer-events-auto">
         <FaArrowRight size={30} />
       </div>
     </div>
