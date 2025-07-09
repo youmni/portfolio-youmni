@@ -9,16 +9,14 @@ const Hero = () => {
   });
 
   return (
-    <div className="hero h-screen flex flex-col items-start justify-center">
-      <h1 className="text-5xl sm:text-6xl md:text-7xl drop-shadow-lg">
+    <div className="h-screen flex flex-col items-center justify-center text-center bg-[#2e2e48] text-[#f2e9e4]">
+      <h1 className="text-5xl sm:text-6xl md:text-7xl drop-shadow-2xl">
         Hi, I'm <br />
-        <span className="text-sky-800">{text}</span>
-        <span>
-          <Cursor cursorStyle="|" cursorColor="white" />
-        </span>
+        <span className="text-[#c9ada7]">{text}</span>
+        <Cursor cursorStyle="|" cursorColor="#f2e9e4" />
       </h1>
-      <p className="mt-4 text-lg sm:text-xl md:text-2xl text-center opacity-80 text-black font tracking-wide drop-shadow-md hover:opacity-100 transition-opacity duration-100">
-        A 2<sup>nd</sup> year <span className="text-sky-800">Applied Computer Science</span> student
+      <p className="mt-6 text-lg sm:text-xl md:text-2xl opacity-90 font-light">
+        A 2<sup>nd</sup> year <span className="text-[#9a8c98]">Applied Computer Science</span> student
       </p>
     </div>
   );

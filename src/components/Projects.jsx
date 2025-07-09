@@ -10,7 +10,7 @@ import { projects } from "../../data";
 const ProjectSwiper = () => {
   return (
     <div id="projects" className="max-w-6xl mx-auto px-4 relative">
-      <h1 className="text-3xl text-start text-gray-800 mb-6">
+      <h1 className="text-3xl text-start text-[#f2e9e4] mb-6">
         My projects
       </h1>
 

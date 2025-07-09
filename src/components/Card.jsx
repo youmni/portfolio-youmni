@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Card = ({ imageUrl, title, description, url, ID }) => {
   return (
-    <div className="relative w-full md:h-[500px] overflow-hidden rounded-lg shadow-lg my-6">
+    <div className="relative w-full md:h-[500px] overflow-hidden rounded-lg shadow-xl my-6 border-4 border-[#000000]">
       <img
         src={imageUrl}
         alt={title}

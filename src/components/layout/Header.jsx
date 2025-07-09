@@ -17,15 +17,16 @@ export default function Header() {
     }
   };
 
-  const buttonClass = "hover:bg-black hover:text-white hover:border-black rounded-full px-6 py-2 cursor-pointer";
+  const buttonClass =
+    "w-20 h-20 rounded-full flex items-center justify-center text-m text-[#f2e9e4] bg-[#4a4e69] hover:bg-[#9a8c98] transition shadow-xl cursor-pointer transition transform hover:scale-110 duration-100 ease-out";
 
   return (
     <header className="hidden sm:block fixed w-full z-50 py-4">
       {isRoot && (
-        <nav className="max-w-xl bg-white mx-auto flex items-center rounded-lg justify-center shadow-xl space-x-5 py-4 text-sky-900 px-4 hover:bg-white hover:text-sky-900">
+        <nav className="max-w-xl mx-auto flex items-center rounded-lg justify-center space-x-5 py-4 px-4">
           <button
             onClick={() => (window.location.href = "/")}
-            className={`${buttonClass} text-sky-900`}
+            className={buttonClass}
           >
             Home
           </button>
