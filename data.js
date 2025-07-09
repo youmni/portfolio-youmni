@@ -190,21 +190,21 @@ export const projects = [
     ],
     repoUrl: "https://github.com/youmni/quizley",
   },
-  {
-    id: 5,
-    title: "Taskflow",
-    description:
-      "Taskflow is a CLI tool for creating and managing tasks (Frontend coming soon!). When a user creates a task and assigns it to a group, they can define the actions that group can perform on that task. Group members are notified whenever they are added to a task. Permissions can also be set for each group to control whether they can edit or delete the task. Additionally, every change made to a task is recorded in the task history. This project was part of our Java Advanced course, where we were given about a week to develop.",
-    images: [taskflowDesign],
-    technologies: ["Picocli", "Spring Boot", "MySQL", "React JS (added soon)"],
-    authors: [
-      {
-        name: "Youmni Malha",
-        linkedin: "https://www.linkedin.com/in/youmni-malha-0a54972a3/",
-      },
-    ],
-    repoUrl: "https://github.com/youmni/taskflow",
-  },
+    //{
+    //id: 5,
+    //title: "Taskflow",
+    //description:
+    //  "Taskflow is a CLI tool for creating and managing tasks (Frontend coming soon!). When a user creates a task and assigns it to a group, they can define the actions that group can perform on that task. Group members are notified whenever they are added to a task. Permissions can also be set for each group to control whether they can edit or delete the task. Additionally, every change made to a task is recorded in the task history. This project was part of our Java Advanced course, where we were given about a week to develop.",
+    //images: [taskflowDesign],
+    //technologies: ["Picocli", "Spring Boot", "MySQL", "React JS (added soon)"],
+    //authors: [
+    // {
+    // name: "Youmni Malha",
+    // linkedin: "https://www.linkedin.com/in/youmni-malha-0a54972a3/",
+    // },
+    // ],
+    // repoUrl: "https://github.com/youmni/taskflow",
+    //},
   {
     id: 6,
     title: "My portfolio",
@@ -218,7 +218,7 @@ export const projects = [
         linkedin: "https://www.linkedin.com/in/youmni-malha-0a54972a3/",
       },
     ],
-    repoUrl: "https://github.com/youmni/portfolio",
+    repoUrl: "https://github.com/youmni/portfolio-youmni",
   },
 ];
 
