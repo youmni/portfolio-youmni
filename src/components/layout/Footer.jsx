@@ -10,7 +10,7 @@ const Footer = () => {
         <p className="text-lg font-semibold">
           &copy; {new Date().getFullYear()} Youmni Malha
         </p>
-        <a href="/public/cv.pdf" download="Youmni_Malha_CV.pdf" className="no-underline">
+        <a href="/cv.pdf" download="Youmni_Malha_CV.pdf" className="no-underline">
           <FiDownload
             size={24}
             className="cursor-pointer text-[#f2e9e4] hover:text-[#288e9c] transition-colors"
