@@ -9,7 +9,7 @@ const Skills = () => {
       </h1>
 
       <h2 className="indent-8 text-2xl text-start text-[#c9ada7] mb-6 my-10">
-        <span className="inline-block w-2.5 h-2.5 bg-[#9a8c98] rounded-full mr-2"></span>
+        <span className="inline-block w-2.5 h-2.5 bg-[#f2e9e4] rounded-full mr-2"></span>
         Technical skills
       </h2>
 
@@ -30,7 +30,7 @@ const Skills = () => {
       </div>
 
       <h2 className="indent-8 text-2xl text-start text-[#c9ada7] mb-6 my-10">
-        <span className="inline-block w-2.5 h-2.5 bg-[#9a8c98] rounded-full mr-2"></span>
+        <span className="inline-block w-2.5 h-2.5 bg-[#f2e9e4] rounded-full mr-2"></span>
         Soft skills
       </h2>
 

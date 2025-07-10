@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <div className="p-6 text-[#f2e9e4] my-30">
-      <h1 id="about" className="text-4xl text-start text-[#c9ada7] mb-6">About Me</h1>
+      <h1 id="about" className="text-4xl text-start text-[#f2e9e4] mb-6">About Me</h1>
 
       <p className="text-2xl leading-relaxed">
         <span className="text-[#c9ada7] font-semibold">I am Youmni Malha</span>, a

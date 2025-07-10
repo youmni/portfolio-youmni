@@ -4,7 +4,7 @@ import { studies } from "../../data";
 const Experience = () => {
   return (
     <div id="experience" className="max-w-6xl mx-auto p-6 text-[#f2e9e4]">
-      <h1 className="text-3xl text-start text-[#c9ada7] mb-6">Studies & Experiences</h1>
+      <h1 className="text-3xl text-start text-[#f2e9e4] mb-6">Studies & Experiences</h1>
       <div className="flex flex-wrap gap-6 justify-center">
         {studies.map((study, index) => (
           <a 
