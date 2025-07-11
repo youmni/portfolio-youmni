@@ -14,6 +14,14 @@ const ProjectPage = () => {
   const [project, setProject] = useState(null);
 
   useEffect(() => {
+    if (project) {
+      document.title = `${project.title} - Youmni Malha`;
+    } else {
+      document.title = "Project Not Found";
+    }
+  }, [project]);
+
+  useEffect(() => {
     const foundProject = projects.find((p) => p.id === parseInt(id));
     setProject(foundProject);
   }, [id]);
@@ -22,7 +30,9 @@ const ProjectPage = () => {
     return (
       <div className="max-w-4xl mx-auto p-6 space-y-6 pt-20 text-center">
         <h1 className="text-4xl font-bold text-[#9a8c98]">Project Not Found</h1>
-        <p className="text-lg text-[#f2e9e4]">We couldn't find the project you're looking for.</p>
+        <p className="text-lg text-[#f2e9e4]">
+          We couldn't find the project you're looking for.
+        </p>
         <Link
           to="/"
           className="inline-block text-[#c9ada7] border-2 border-[#c9ada7] hover:bg-[#22223b] hover:text-[#f2e9e4] hover:border-[#22223b] rounded-full px-3 py-2 cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#c9ada7] focus:ring-opacity-75"
