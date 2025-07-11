@@ -264,7 +264,7 @@ export const studies = [
   },
   {
     name: "Tomas Bata University",
-    description: "cybernetics & informatics - key 21st century sciences",
+    description: "Cybernetics & Informatics - Key 21st Century Sciences",
     year: "August 2024",
     education: "Summer Program",
     url: "https://www.utb.cz/en/",
