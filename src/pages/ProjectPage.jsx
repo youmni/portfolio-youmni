@@ -12,6 +12,8 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 const ProjectPage = () => {
   const { id } = useParams();
   const [project, setProject] = useState(null);
+  const [atStart, setAtStart] = useState(true);
+  const [atEnd, setAtEnd] = useState(false);
 
   useEffect(() => {
     if (project) {
@@ -66,6 +68,12 @@ const ProjectPage = () => {
             nextEl: ".custom-swiper-button-next",
             prevEl: ".custom-swiper-button-prev",
           }}
+          onReachBeginning={() => setAtStart(true)}
+          onReachEnd={() => setAtEnd(true)}
+          onFromEdge={() => {
+            setAtStart(false);
+            setAtEnd(false);
+          }}
           className="w-full md:h-[500px] rounded-lg overflow-hidden"
         >
           {project.images.map((image, index) => (
@@ -79,13 +87,20 @@ const ProjectPage = () => {
           ))}
         </Swiper>
 
-        {/* Custom navigation buttons */}
-        <div className="custom-swiper-button-prev absolute top-1/2 left-2 -translate-y-1/2 z-20 cursor-pointer text-[#f2e9e4] bg-[#22223b] rounded-full border-2 border-[#9a8c98] pointer-events-auto p-1">
+        <div
+          className={`custom-swiper-button-prev absolute top-1/2 left-2 -translate-y-1/2 z-20 cursor-pointer bg-[#a688bf] rounded-full border-2 border-black pointer-events-auto transition-opacity duration-300 ${atStart ? "opacity-30 cursor-default" : "text-[#f2e9e4]"
+            }`}
+        >
           <FaArrowLeft size={30} />
         </div>
-        <div className="custom-swiper-button-next absolute top-1/2 right-2 -translate-y-1/2 z-20 cursor-pointer text-[#f2e9e4] bg-[#22223b] rounded-full border-2 border-[#9a8c98] pointer-events-auto p-1">
+
+        <div
+          className={`custom-swiper-button-next absolute top-1/2 right-2 -translate-y-1/2 z-20 cursor-pointer bg-[#a688bf] rounded-full border-2 border-black pointer-events-auto transition-opacity duration-300 ${atEnd ? "opacity-30 cursor-default" : "text-[#f2e9e4]"
+            }`}
+        >
           <FaArrowRight size={30} />
         </div>
+
       </div>
 
       <div className="space-y-4">
