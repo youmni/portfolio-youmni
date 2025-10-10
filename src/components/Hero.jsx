@@ -16,7 +16,7 @@ const Hero = () => {
         <Cursor cursorStyle="|" cursorColor="#f2e9e4" />
       </h1>
       <p className="mt-6 text-lg sm:text-xl md:text-2xl opacity-90 font-light">
-        A 2<sup>nd</sup> year <span className="text-[#9a8c98]">Applied Computer Science</span> student
+        A 3<sup>rd</sup> year <span className="text-[#9a8c98]">Applied Computer Science</span> student
       </p>
     </div>
   );
