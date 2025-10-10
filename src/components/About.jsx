@@ -7,7 +7,7 @@ const About = () => {
 
       <p className="text-2xl leading-relaxed">
         <span className="text-[#c9ada7] font-semibold">I am Youmni Malha</span>, a
-        motivated second-year Applied Computer Science student at
+        motivated third-year Applied Computer Science student at
         Erasmushogeschool Brussel. My passion for IT drives me to continuously
         learn and grow, with a particular interest in{" "}
         <span className="text-[#9a8c98] font-semibold">software engineering</span>{" "}
