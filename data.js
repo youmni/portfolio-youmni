@@ -49,8 +49,9 @@ import quizleyPlayTimeUp from "./src/assets/quizley/quizley-play-time-up.png";
 import quizleyPlay from "./src/assets/quizley/quizley-play.png";
 import quizleyDesign from "./src/assets/quizley/quizley.png";
 
+import aklaa from "./src/assets/aklaa/aklaa.png";
 import aklaaDishesOverview from "./src/assets/aklaa/aklaa-dishes-overview.png";
-import aklaaDishDetails from "./src/assets/aklaa/aklaa-dish-details.png";
+import aklaaDishDetails from "./src/assets/aklaa/aklaa-dishes-details.png";
 import aklaaCart from "./src/assets/aklaa/aklaa-cart.png";
 import aklaaIngredientsOverview from "./src/assets/aklaa/aklaa-ingredients-overview.png";
 import aklaaIngredientsAdd from "./src/assets/aklaa/aklaa-ingredients-add.png";
@@ -87,6 +88,7 @@ export const projects = [
     description:
       "Aklaa is an application that automatically generates shopping lists based on the meals or individual products entered by the user. It allows users to manage recipes, plan their weekly meals, and customize the generated shopping list by adding or removing ingredients.",
     images: [
+      aklaa,
       aklaaDishesOverview,
       aklaaDishDetails,
       aklaaCart,
