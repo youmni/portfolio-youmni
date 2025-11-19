@@ -49,15 +49,15 @@ import quizleyPlayTimeUp from "./src/assets/quizley/quizley-play-time-up.png";
 import quizleyPlay from "./src/assets/quizley/quizley-play.png";
 import quizleyDesign from "./src/assets/quizley/quizley.png";
 
-import aklaaDishesOverview from "./src/assets/aklaa-dishes-overview.png";
-import aklaaDishDetails from "./src/assets/aklaa-dish-details.png";
-import aklaaCart from "./src/assets/aklaa-cart.png";
-import aklaaIngredientsOverview from "./src/assets/aklaa-ingredients-overview.png";
-import aklaaIngredientsAdd from "./src/assets/aklaa-ingredients-add.png";
-import aklaaLogin from "./src/assets/aklaa-login.png";
-import aklaaRegister from "./src/assets/aklaa-register.png";
-import aklaaListsEdit from "./src/assets/aklaa-lists-edit.png";
-import aklaaListsOverview from "./src/assets/aklaa-lists-overview.png";
+import aklaaDishesOverview from "./src/assets/aklaa/aklaa-dishes-overview.png";
+import aklaaDishDetails from "./src/assets/aklaa/aklaa-dish-details.png";
+import aklaaCart from "./src/assets/aklaa/aklaa-cart.png";
+import aklaaIngredientsOverview from "./src/assets/aklaa/aklaa-ingredients-overview.png";
+import aklaaIngredientsAdd from "./src/assets/aklaa/aklaa-ingredients-add.png";
+import aklaaLogin from "./src/assets/aklaa/aklaa-login.png";
+import aklaaRegister from "./src/assets/aklaa/aklaa-register.png";
+import aklaaListsEdit from "./src/assets/aklaa/aklaa-lists-edit.png";
+import aklaaListsOverview from "./src/assets/aklaa/aklaa-lists-overview.png";
 
 import taskflowDesign from "./src/assets/taskflow/taskflow.png";
 import portfolio from "./src/assets/portfolio.png";
