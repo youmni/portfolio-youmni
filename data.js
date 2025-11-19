@@ -49,6 +49,16 @@ import quizleyPlayTimeUp from "./src/assets/quizley/quizley-play-time-up.png";
 import quizleyPlay from "./src/assets/quizley/quizley-play.png";
 import quizleyDesign from "./src/assets/quizley/quizley.png";
 
+import aklaaDishesOverview from "./src/assets/aklaa-dishes-overview.png";
+import aklaaDishDetails from "./src/assets/aklaa-dish-details.png";
+import aklaaCart from "./src/assets/aklaa-cart.png";
+import aklaaIngredientsOverview from "./src/assets/aklaa-ingredients-overview.png";
+import aklaaIngredientsAdd from "./src/assets/aklaa-ingredients-add.png";
+import aklaaLogin from "./src/assets/aklaa-login.png";
+import aklaaRegister from "./src/assets/aklaa-register.png";
+import aklaaListsEdit from "./src/assets/aklaa-lists-edit.png";
+import aklaaListsOverview from "./src/assets/aklaa-lists-overview.png";
+
 import taskflowDesign from "./src/assets/taskflow/taskflow.png";
 import portfolio from "./src/assets/portfolio.png";
 
@@ -71,8 +81,33 @@ import { FaJava } from "react-icons/fa";
 import { FaBullhorn, FaBrain, FaHandshake, FaLightbulb } from "react-icons/fa";
 
 export const projects = [
-  {
+    {
     id: 1,
+    title: "Aklaa",
+    description:
+      "Aklaa is an application that automatically generates shopping lists based on the meals or individual products entered by the user. It allows users to manage recipes, plan their weekly meals, and customize the generated shopping list by adding or removing ingredients.",
+    images: [
+      aklaaDishesOverview,
+      aklaaDishDetails,
+      aklaaCart,
+      aklaaIngredientsOverview,
+      aklaaIngredientsAdd,
+      aklaaListsEdit,
+      aklaaListsOverview,
+      aklaaLogin,
+      aklaaRegister,
+    ],
+    technologies: ["Docker", "Spring Boot", "React JS", "MySQL", "Minio", "Chakra UI"],
+    authors: [
+      {
+        name: "Youmni Malha",
+        linkedin: "https://www.linkedin.com/in/youmni-malha-0a54972a3/",
+      },
+    ],
+    repoUrl: "https://github.com/youmni/aklaa",
+  },
+  {
+    id: 2,
     title: "Tutorspace",
     description:
       "TutorSpace is a community-driven learning platform that connects students and tutors to enhance the learning experience. The platform offers various features for both administrators and users. Administrators can add new institutions and courses, update or delete existing information, and manage users. They can also create announcements and update FAQs to share important information. Users can browse available courses, apply to become a tutor, and consult important announcements and frequently asked questions. They can also contact administrators via email for support and feedback. In addition, users and tutors can chat with each other in real-time via Pusher.js, enabling direct communication. Tutors can also create reservations for their sessions. TutorSpace thus provides a user-friendly environment for both learning and teaching.",
@@ -110,7 +145,7 @@ export const projects = [
     repoUrl: "https://github.com/youmni/tutorspace",
   },
   {
-    id: 2,
+    id: 3,
     title: "FlipFlow",
     description:
       "FlipFlow is a community-driven learning platform where users can create study cards for various purposes, such as studying or learning new languages. It enables users to organize their learning process by creating card sets, adding cards, and sharing these sets with other users. Users can create new card sets, add individual cards, explore and learn from public sets, and manage their sets by editing or deleting cards and sets, making it a flexible and interactive way to enhance learning.",
@@ -133,7 +168,7 @@ export const projects = [
     repoUrl: "https://github.com/youmni/flipflow",
   },
   {
-    id: 3,
+    id: 4,
     title: "EhB medialab",
     description:
       "A platform for easy product reservations and efficient administration for EhB. This was a first-year project where I primarily focused on backend development but also worked on frontend towards the end. The platform provides a smooth, simple, and clear way for users to reserve products, while offering the administrator an efficient management interface.",
@@ -169,7 +204,7 @@ export const projects = [
     repoUrl: "https://github.com/Youmni/Programming-Project-groep3",
   },
   {
-    id: 4,
+    id: 5,
     title: "Quizley",
     description:
       "A retro quiz website offering a variety of quizzes, ranging from easy to hard. The platform allows users to participate in quizzes of various difficulty levels, providing an engaging experience with a retro aesthetic. It features a simple, user-friendly interface, enabling players to test their knowledge across different topics.",
