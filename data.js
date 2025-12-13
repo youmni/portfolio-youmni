@@ -162,7 +162,7 @@ export const projects = [
     id: 3,
     title: "Mushroom Classiciation with ML",
     description:
-      "A machine learning project that predicts whether a mushroom is poisonous or edible based on its physical characteristics, using features such as cap shape, color, odor and spore print. The Jupyter notebook explains each step of the process and the reasoning behind the chosen methods.",
+      "A machine learning project that predicts whether a mushroom is poisonous or edible based on its physical characteristics. The Jupyter notebook explains each step of the process and the reasoning behind the chosen methods.",
     images: [
       mushroomCover,
       mushroomEdiblePoisonous,
