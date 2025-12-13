@@ -28,6 +28,18 @@ import flipflowPersonal from "./src/assets/flipflow/flipflow-personal.png";
 import flipflowDesign from "./src/assets/flipflow/flipflow.png";
 import tutorspaceDesign from "./src/assets/tutorspace/tutorspace.png";
 
+import mushroomCover from "./src/assets/mushroom/mushroom.webp";
+import mushroomEdiblePoisonous from "./src/assets/mushroom/edible-poisonous.png";
+import mushroomBaseExtraTreeMatrix from "./src/assets/mushroom/base-extra-tree-matrix.png";
+import mushroomBaseGradientBoostingMatrix from "./src/assets/mushroom/base-gradient-boosting-matrix.png";
+import mushroomBaseRandomForestMatrix from "./src/assets/mushroom/base-random-forest-matrix.png";
+import mushroomFeatureImportanceGradientBoosting from "./src/assets/mushroom/feature-importance-gradient-boosting.png";
+import mushroomFeatureImportanceRandomForest from "./src/assets/mushroom/feature-importance-random-forest.png";
+import mushroomFeatureImportanceTunedExtraTrees from "./src/assets/mushroom/feature-importance-tuned-extra-trees.png";
+import mushroomTunedExtraTreesMatrix from "./src/assets/mushroom/tuned-extra-trees-matrix.png";
+import mushroomTunedGradientBoostingMatrix from "./src/assets/mushroom/tuned-gradient-boosting-matrix.png";
+import mushroomTunedRandomForestMatrix from "./src/assets/mushroom/tuned-random-forest-matrix.png";
+
 import medialabDesign from "./src/assets/medialab/medialab.png";
 import adminAddProduct from "./src/assets/medialab/admin-add-product.png";
 import adminHome from "./src/assets/medialab/admin-home.png";
@@ -82,7 +94,7 @@ import { FaJava } from "react-icons/fa";
 import { FaBullhorn, FaBrain, FaHandshake, FaLightbulb } from "react-icons/fa";
 
 export const projects = [
-    {
+  {
     id: 1,
     title: "Aklaa",
     description:
@@ -148,6 +160,33 @@ export const projects = [
   },
   {
     id: 3,
+    title: "Mushroom Classiciation with ML",
+    description:
+      "A machine learning project that predicts whether a mushroom is poisonous or edible based on its physical characteristics, using features such as cap shape, color, odor and spore print. The Jupyter notebook explains each step of the process and the reasoning behind the chosen methods.",
+    images: [
+      mushroomCover,
+      mushroomEdiblePoisonous,
+      mushroomBaseRandomForestMatrix,
+      mushroomTunedRandomForestMatrix,
+      mushroomFeatureImportanceRandomForest,
+      mushroomBaseGradientBoostingMatrix,
+      mushroomTunedGradientBoostingMatrix,
+      mushroomFeatureImportanceGradientBoosting,
+      mushroomBaseExtraTreeMatrix,
+      mushroomTunedExtraTreesMatrix,
+      mushroomFeatureImportanceTunedExtraTrees,
+    ],
+    technologies: ["Python", "Jupyter Notebook", "Scikit-learn", "Pandas", "Matplotlib"],
+    authors: [
+      {
+        name: "Youmni Malha",
+        linkedin: "https://www.linkedin.com/in/youmni-malha-0a54972a3/",
+      },
+    ],
+    repoUrl: "https://github.com/youmni/mushroom-classification-ml",
+  },
+  {
+    id: 4,
     title: "FlipFlow",
     description:
       "FlipFlow is a community-driven learning platform where users can create study cards for various purposes, such as studying or learning new languages. It enables users to organize their learning process by creating card sets, adding cards, and sharing these sets with other users. Users can create new card sets, add individual cards, explore and learn from public sets, and manage their sets by editing or deleting cards and sets, making it a flexible and interactive way to enhance learning.",
@@ -170,7 +209,7 @@ export const projects = [
     repoUrl: "https://github.com/youmni/flipflow",
   },
   {
-    id: 4,
+    id: 5,
     title: "EhB medialab",
     description:
       "A platform for easy product reservations and efficient administration for EhB. This was a first-year project where I primarily focused on backend development but also worked on frontend towards the end. The platform provides a smooth, simple, and clear way for users to reserve products, while offering the administrator an efficient management interface.",
@@ -206,7 +245,7 @@ export const projects = [
     repoUrl: "https://github.com/Youmni/Programming-Project-groep3",
   },
   {
-    id: 5,
+    id: 6,
     title: "Quizley",
     description:
       "A retro quiz website offering a variety of quizzes, ranging from easy to hard. The platform allows users to participate in quizzes of various difficulty levels, providing an engaging experience with a retro aesthetic. It features a simple, user-friendly interface, enabling players to test their knowledge across different topics.",
@@ -227,23 +266,23 @@ export const projects = [
     ],
     repoUrl: "https://github.com/youmni/quizley",
   },
-    //{
-    //id: 5,
-    //title: "Taskflow",
-    //description:
-    //  "Taskflow is a CLI tool for creating and managing tasks (Frontend coming soon!). When a user creates a task and assigns it to a group, they can define the actions that group can perform on that task. Group members are notified whenever they are added to a task. Permissions can also be set for each group to control whether they can edit or delete the task. Additionally, every change made to a task is recorded in the task history. This project was part of our Java Advanced course, where we were given about a week to develop.",
-    //images: [taskflowDesign],
-    //technologies: ["Picocli", "Spring Boot", "MySQL", "React JS (added soon)"],
-    //authors: [
-    // {
-    // name: "Youmni Malha",
-    // linkedin: "https://www.linkedin.com/in/youmni-malha-0a54972a3/",
-    // },
-    // ],
-    // repoUrl: "https://github.com/youmni/taskflow",
-    //},
+  //{
+  //id: 5,
+  //title: "Taskflow",
+  //description:
+  //  "Taskflow is a CLI tool for creating and managing tasks (Frontend coming soon!). When a user creates a task and assigns it to a group, they can define the actions that group can perform on that task. Group members are notified whenever they are added to a task. Permissions can also be set for each group to control whether they can edit or delete the task. Additionally, every change made to a task is recorded in the task history. This project was part of our Java Advanced course, where we were given about a week to develop.",
+  //images: [taskflowDesign],
+  //technologies: ["Picocli", "Spring Boot", "MySQL", "React JS (added soon)"],
+  //authors: [
+  // {
+  // name: "Youmni Malha",
+  // linkedin: "https://www.linkedin.com/in/youmni-malha-0a54972a3/",
+  // },
+  // ],
+  // repoUrl: "https://github.com/youmni/taskflow",
+  //},
   {
-    id: 6,
+    id: 7,
     title: "My portfolio",
     description:
       "This portfolio website is also one of my projects, created with React JS to showcase my skills and experience in web development.",
@@ -313,7 +352,7 @@ export const studies = [
     education: "Student",
     url: "https://www.colruytgroup.com/en",
   },
-    {
+  {
     name: "Info Support",
     description: "Student Software Engineer",
     year: "July 2025 - July 2025",
