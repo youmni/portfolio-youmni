@@ -348,14 +348,14 @@ export const studies = [
   {
     name: "Colruyt Group",
     description: "Student Employee",
-    year: "July 2022 - Present",
+    year: "July 2022 - May 2025",
     education: "Student",
     url: "https://www.colruytgroup.com/en",
   },
   {
     name: "Info Support",
     description: "Student Software Engineer",
-    year: "July 2025 - July 2025",
+    year: "July 2025",
     education: "Student",
     url: "https://www.infosupport.com/en",
   },
